@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Contains all the templates used to generate default examples in the playground",
   "scripts": {
-    "test": "bit test"
+    "test": "bit test",
+    "build": "bit build"
   },
   "repository": {
     "type": "git",
