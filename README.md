@@ -1,12 +1,8 @@
 # Example Templates
 
-This repository contains the boilerplates used by [bit.dev's playground](https://docs.bit.dev/docs/bit-dev#component-playground) for creating new examples. 
+This repository contains the boilerplates used by [bit.dev's playground](https://docs.bit.dev/docs/bit-dev#component-playground) for creating new examples.  
 
 ![screenshot](./screenshot.png)
-
-
-Templates are published [here](https://bit.dev/bit/javascript?namespaces=template)
-Default generators are published [here](https://bit.dev/bit/javascript?namespaces=default-generator)
 
 ## Templates
 Here is the list of existing templates:
@@ -14,6 +10,8 @@ Here is the list of existing templates:
 * [react-native](./components/template/react-native/index.ts)
 * [angular](./components/template/angular/ng-template-generator.ts)
 * [vue](./components/template/vue/vue-template.ts) (most of code is [here](./components/default-generator/vue/vue-default-code.ts))
+
+All components are available [here](https://bit.dev/bit/javascript?namespaces=template).
 
 ### Template APIs
 A template component should export the following interface  
