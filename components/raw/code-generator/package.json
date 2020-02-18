@@ -1,0 +1,46 @@
+{
+  "name": "@bit/bit.javascript.raw.code-generator",
+  "version": "2.0.4",
+  "homepage": "https://bit.dev/bit/javascript/raw/code-generator",
+  "main": "dist/code-generator.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "@types/mocha": "^5.2.7"
+  },
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": {
+        "bit.envs/compilers/typescript@3.1.12": {
+          "rawConfig": {
+            "tsconfig": {
+              "compilerOptions": {
+                "target": "ES5",
+                "module": "CommonJS"
+              }
+            },
+            "development": false,
+            "copyPolicy": {
+              "ignorePatterns": [
+                "package.json",
+                "package-lock.json",
+                "tsconfig.json"
+              ],
+              "disable": false
+            }
+          },
+          "options": {},
+          "files": {}
+        }
+      },
+      "tester": "bit.envs/testers/mocha@5.0.2"
+    },
+    "overrides": {
+      "devDependencies": {
+        "@types/mocha": "^5.2.7"
+      }
+    }
+  }
+}

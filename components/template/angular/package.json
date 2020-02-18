@@ -1,0 +1,17 @@
+{
+  "name": "@bit/bit.javascript.template.angular",
+  "version": "2.0.2",
+  "homepage": "https://bit.dev/bit/javascript/template/angular",
+  "main": "dist/ng-template-generator.js",
+  "dependencies": {
+    "@bit/bit.javascript.default-generator.canonize": "file:../../default-generator/canonize"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/typescript@3.0.5"
+    }
+  }
+}

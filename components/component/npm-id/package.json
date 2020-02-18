@@ -1,0 +1,20 @@
+{
+  "name": "@bit/bit.javascript.component.npm-id",
+  "version": "0.4.3",
+  "homepage": "https://bit.dev/bit/javascript/component/npm-id",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@bit/bit.utils.string.optional": "0.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2"
+  },
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/flow@0.0.10",
+      "tester": "bit.envs/testers/mocha@0.0.12"
+    }
+  }
+}

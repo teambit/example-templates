@@ -1,7 +1,7 @@
 {
   "name": "example-templates",
   "version": "1.0.0",
-  "description": "",
+  "description": "Contains all the templates used to generate default examples in the playground",
   "scripts": {
     "test": "bit test"
   },
@@ -18,6 +18,18 @@
   "bit": {
     "env": {},
     "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm"
+    "packageManager": "yarn"
+  },
+  "dependencies": {
+    "@bit/bit.javascript.component.id": "file:./components/component/id",
+    "@bit/bit.javascript.component.npm-id": "file:./components/component/npm-id",
+    "@bit/bit.javascript.default-generator.canonize": "file:./components/default-generator/canonize",
+    "@bit/bit.javascript.default-generator.react": "file:./components/default-generator/react",
+    "@bit/bit.javascript.default-generator.vue": "file:./components/default-generator/vue",
+    "@bit/bit.javascript.raw.code-generator": "file:./components/raw/code-generator",
+    "@bit/bit.javascript.template.angular": "file:./components/template/angular",
+    "@bit/bit.javascript.template.react": "file:./components/template/react",
+    "@bit/bit.javascript.template.react-native": "file:./components/template/react-native",
+    "@bit/bit.javascript.template.vue": "file:./components/template/vue"
   }
 }

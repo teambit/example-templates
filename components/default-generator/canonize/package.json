@@ -1,0 +1,20 @@
+{
+  "name": "@bit/bit.javascript.default-generator.canonize",
+  "version": "0.0.1",
+  "homepage": "https://bit.dev/bit/javascript/default-generator/canonize",
+  "main": "dist/canonize.js",
+  "dependencies": {
+    "camelcase": "^5.0.0",
+    "@bit/bit.javascript.component.id": "file:../../component/id",
+    "@bit/bit.javascript.component.npm-id": "file:../../component/npm-id"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/flow@0.0.10",
+      "tester": "bit.envs/testers/mocha@0.0.14"
+    }
+  }
+}
