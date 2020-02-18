@@ -5,8 +5,7 @@
   "main": "dist/vue-template.js",
   "dependencies": {
     "@bit/bit.javascript.default-generator.canonize": "file:../../default-generator/canonize",
-    "@bit/bit.javascript.raw.code-generator": "file:../../raw/code-generator",
-    "indent-string": "^4.0.0"
+    "@bit/bit.javascript.raw.code-generator": "file:../../raw/code-generator"
   },
   "devDependencies": {
     "chai": "^4.2.0"
