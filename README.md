@@ -41,12 +41,13 @@ Contributions are welcome on this repository, and will be published to the colle
 
 1. Clone the repository
 1. [Install bit](https://docs.bit.dev/docs/installation)
-1. Run bit import to import all the components
-1. Make code modifications
-1. Run `bit build` or `yarn build`
-1. Test the components: `bit test` or `yarn test`
-1. Create a pull request with your changes
+1. Run `bit import` to sync components.
+1. Update code in a new branch.
+1. Run `bit build` (or `yarn build`)
+1. Test the components: `bit test` (or `yarn test`)
+1. Create a *pull request* with your changes
 
-After approving the PR, the changes will be exported to the collection and deployed to bit.dev. 
+After approving the PR, changes will be exported to the collection, and deployed to bit.dev.  
 
-Note: We are in a process of unifying all components to use the same tester. 
+Note:  
+We are in a process of unifying all components to use the same tester. 
