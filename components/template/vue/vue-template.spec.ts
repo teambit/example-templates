@@ -1,8 +1,8 @@
-import { makeVueTemplate } from './vue-template';
+import { makeTemplate } from './vue-template';
 import { expect } from 'chai';
 
 it('should create default code', () => {
-	const result = makeVueTemplate({ npmId: '@bit/bit.javascript.raw.code-generator' });
+	const result = makeTemplate({ npmId: '@bit/bit.javascript.raw.code-generator' });
 
 	const indexvue = [
 		'<template>',

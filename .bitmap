@@ -53,24 +53,6 @@
         "origin": "IMPORTED",
         "originallySharedDir": "src/utils"
     },
-    "bit.javascript/default-generator/vue@2.0.4": {
-        "files": [
-            {
-                "name": "vue-default-code.spec.ts",
-                "relativePath": "vue-default-code.spec.ts",
-                "test": true
-            },
-            {
-                "name": "vue-default-code.ts",
-                "relativePath": "vue-default-code.ts",
-                "test": false
-            }
-        ],
-        "mainFile": "vue-default-code.ts",
-        "rootDir": "components/default-generator/vue",
-        "origin": "IMPORTED",
-        "originallySharedDir": "components/default-generator/vue"
-    },
     "bit.javascript/raw/code-generator@2.0.4": {
         "files": [
             {
@@ -142,7 +124,7 @@
         "origin": "IMPORTED",
         "originallySharedDir": "components/template/react"
     },
-    "bit.javascript/template/vue@2.0.4": {
+    "bit.javascript/template/vue@2.0.5": {
         "files": [
             {
                 "name": "vue-template.spec.ts",

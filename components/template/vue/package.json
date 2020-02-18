@@ -1,10 +1,12 @@
 {
   "name": "@bit/bit.javascript.template.vue",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "homepage": "https://bit.dev/bit/javascript/template/vue",
   "main": "dist/vue-template.js",
   "dependencies": {
-    "@bit/bit.javascript.default-generator.vue": "file:../../default-generator/vue"
+    "@bit/bit.javascript.default-generator.canonize": "file:../../default-generator/canonize",
+    "@bit/bit.javascript.raw.code-generator": "file:../../raw/code-generator",
+    "indent-string": "^4.0.0"
   },
   "devDependencies": {
     "chai": "^4.2.0"
@@ -13,8 +15,29 @@
   "license": "SEE LICENSE IN LICENSE",
   "bit": {
     "env": {
-      "compiler": "bit.envs/compilers/typescript@3.0.0",
+      "compiler": {
+        "bit.envs/compilers/typescript@3.1.39": {
+          "rawConfig": {
+            "tsconfig": {
+              "compilerOptions": {
+                "target": "ES5",
+                "module": "CommonJS"
+              }
+            }
+          }
+        }
+      },
       "tester": "bit.envs/testers/mocha@5.0.2"
+    },
+    "overrides": {
+      "devDependencies": {
+        "chai": "^4.2.0",
+        "sinon": "^8.1.1",
+        "@types/chai": "^4.2.8",
+        "@types/sinon": "^7.5.1",
+        "@types/mocha": "^7.0.1",
+        "@types/node": "^13.7.1"
+      }
     }
   }
 }
