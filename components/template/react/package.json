@@ -1,6 +1,6 @@
 {
   "name": "@bit/bit.javascript.template.react",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "homepage": "https://bit.dev/bit/javascript/template/react",
   "main": "dist/react-template.js",
   "dependencies": {

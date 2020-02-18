@@ -106,7 +106,7 @@
         "origin": "IMPORTED",
         "originallySharedDir": "components/template/react-native"
     },
-    "bit.javascript/template/react@2.1.0": {
+    "bit.javascript/template/react@2.1.1": {
         "files": [
             {
                 "name": "react-template.spec.ts",

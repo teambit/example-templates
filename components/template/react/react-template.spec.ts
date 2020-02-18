@@ -1,8 +1,8 @@
-import { makeReactTemplate } from './react-template'; 
+import { makeTemplate } from './react-template'; 
 import { expect } from 'chai';
 
 it('should create default code', () => {
-	const result = makeReactTemplate({ npmId: '@bit/bit.javascript.raw.code-generator' });
+	const result = makeTemplate({ npmId: '@bit/bit.javascript.raw.code-generator' });
 
 	const indexjs = [
 		`import React from 'react';`,

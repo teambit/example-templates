@@ -4,7 +4,7 @@ import { CodeGenerator } from '@bit/bit.javascript.raw.code-generator';
 const codeGenerator = new CodeGenerator();
 
 export const mainFile = 'index.js';
-export function makeReactTemplate({ npmId }: { npmId: string }) {
+export function makeTemplate({ npmId }: { npmId: string }) {
 	const code = generateReactDefaultCode(npmId);
 
 	return {
