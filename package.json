@@ -1,0 +1,23 @@
+{
+  "name": "example-templates",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "bit test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teambit/example-templates.git"
+  },
+  "author": "Uri Kutner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teambit/example-templates/issues"
+  },
+  "homepage": "https://github.com/teambit/example-templates#readme",
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  }
+}
