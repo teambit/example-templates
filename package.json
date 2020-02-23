@@ -22,8 +22,6 @@
     "packageManager": "yarn"
   },
   "dependencies": {
-    "@bit/bit.javascript.component.id": "file:./components/component/id",
-    "@bit/bit.javascript.component.npm-id": "file:./components/component/npm-id",
     "@bit/bit.javascript.default-generator.canonize": "file:./components/default-generator/canonize",
     "@bit/bit.javascript.raw.code-generator": "file:./components/raw/code-generator",
     "@bit/bit.javascript.template.angular": "file:./components/template/angular",
