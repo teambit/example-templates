@@ -5,8 +5,8 @@
   "main": "dist/canonize.js",
   "dependencies": {
     "camelcase": "^5.0.0",
-    "@bit/bit.javascript.component.id": "file:../../component/id",
-    "@bit/bit.javascript.component.npm-id": "file:../../component/npm-id"
+    "@bit/bit.javascript.component.id": "^1.1.5",
+    "@bit/bit.javascript.component.npm-id": "^0.4.3"
   },
   "devDependencies": {},
   "peerDependencies": {},
