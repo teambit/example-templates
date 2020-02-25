@@ -2,19 +2,26 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
+
+default_image: &default_image
+  docker:
+    - image: circleci/node:12.12
+
+default_resource_class: &default_resource_class
+  resource_class: small
+
+default_working_dir: &default_working_dir
+  working_directory: ~/repo
+
+defaults: &defaults
+  <<: *default_image
+  <<: *default_resource_class
+  <<: *default_working_dir
+
 version: 2
 jobs:
   build:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:12.12
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
-    working_directory: ~/repo
+    <<: *defaults
 
     steps:
       - checkout
@@ -32,11 +39,23 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      
-      - run: bit init
+          
+      - restore_cache:
+          keys:
+            - v1-bit-envs
+
       - run: bit import 
-      - run: bit build
-      - run: bit build #first build sometimes fails :(
+      - run: bit import -e
+      
+      # first build may fail (when fetching compiler)
+      # https://github.com/teambit/bit/issues/2297
+      - run: bit build || bit build
+      
+      - save_cache:
+          paths:
+            - .git/bit/components
+          key: v1-bit-envs
+
 
       # run tests!
       - run: yarn test
