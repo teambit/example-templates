@@ -44,7 +44,7 @@ jobs:
           keys:
             - v1-bit-envs
             
-      - run: yarn global add bit-bin
+      - run: sudo yarn global add bit-bin
 
       - run: bit config set analytics_reporting false && bit config set error_reporting false
       - run: bit config set user.token ${BIT_TOKEN}
