@@ -43,7 +43,13 @@ jobs:
       - restore_cache:
           keys:
             - v1-bit-envs
+            
+      - run: yarn global add bit-bin
 
+      - run: bit config set analytics_reporting false && bit config set error_reporting false
+      - run: bit config set user.token ${BIT_TOKEN}
+
+      - run: bit init
       - run: bit import 
       - run: bit import -e
       
