@@ -28,5 +28,8 @@
     "@bit/bit.javascript.template.react": "file:./components/template/react",
     "@bit/bit.javascript.template.react-native": "file:./components/template/react-native",
     "@bit/bit.javascript.template.vue": "file:./components/template/vue"
+  },
+  "devDependencies": {
+    "bit-bin": "^14.7.6"
   }
 }

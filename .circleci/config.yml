@@ -26,36 +26,34 @@ jobs:
     steps:
       - checkout
 
-      # # Download and cache dependencies
-      # - restore_cache:
-      #     keys:
-      #       - v1-dependencies-{{ checksum "package.json" }}
-      #       # fallback to using the latest cache if no exact match is found
-      #       - v1-dependencies-
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
 
-      # - run: yarn install
+      - run: yarn install
 
-      # - save_cache:
-      #     paths:
-      #       - node_modules
-      #     key: v1-dependencies-{{ checksum "package.json" }}
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
           
       - restore_cache:
           keys:
             - v1-bit-envs
-            
-      - run: sudo yarn global add bit-bin
 
-      - run: bit config set analytics_reporting false && bit config set error_reporting false
-      - run: bit config set user.token ${BIT_TOKEN}
+      - run: ./node_modules/bit-bin/bin/bit config set analytics_reporting false && ./node_modules/bit-bin/bin/bit config set error_reporting false
+      - run: ./node_modules/bit-bin/bin/bit config set user.token ${BIT_TOKEN}
 
-      - run: bit init
-      - run: bit import 
-      - run: bit import -e
+      - run: ./node_modules/bit-bin/bin/bit init
+      - run: ./node_modules/bit-bin/bin/bit import 
+      - run: ./node_modules/bit-bin/bin/bit import -e
       
       # first build may fail (when fetching compiler)
       # https://github.com/teambit/bit/issues/2297
-      - run: bit build || bit build
+      - run: ./node_modules/bit-bin/bin/bit build || ./node_modules/bit-bin/bin/bit build
       
       - save_cache:
           paths:
