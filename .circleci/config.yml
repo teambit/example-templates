@@ -44,16 +44,16 @@ jobs:
           keys:
             - v1-bit-envs
 
-      - run: ./node_modules/bit-bin/bin/bit config set analytics_reporting false && ./node_modules/bit-bin/bin/bit config set error_reporting false
-      - run: ./node_modules/bit-bin/bin/bit config set user.token ${BIT_TOKEN}
+      - run: ./node_modules/bit-bin/bin/bit.js config set analytics_reporting false && ./node_modules/bit-bin/bin/bit.js config set error_reporting false
+      - run: ./node_modules/bit-bin/bin/bit.js config set user.token ${BIT_TOKEN}
 
-      - run: ./node_modules/bit-bin/bin/bit init
-      - run: ./node_modules/bit-bin/bin/bit import 
-      - run: ./node_modules/bit-bin/bin/bit import -e
+      - run: ./node_modules/bit-bin/bin/bit.js init
+      - run: ./node_modules/bit-bin/bin/bit.js import 
+      - run: ./node_modules/bit-bin/bin/bit.js import -e
       
       # first build may fail (when fetching compiler)
       # https://github.com/teambit/bit/issues/2297
-      - run: ./node_modules/bit-bin/bin/bit build || ./node_modules/bit-bin/bin/bit build
+      - run: ./node_modules/bit-bin/bin/bit.js build || ./node_modules/bit-bin/bin/bit.js build
       
       - save_cache:
           paths:
