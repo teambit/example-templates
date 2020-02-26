@@ -5,17 +5,17 @@ This repository contains the boilerplates used by [bit.dev's playground](https:/
 ![screenshot](./screenshot.png)
 
 ## Templates
+
+The templates are located under the components/template folder in thie repo, and also published as public Bit components [here](https://bit.dev/bit/javascript?namespaces=template).
 Here is the list of existing templates:
 * [react](./components/template/react/react-template.ts) (most of the code is [here](./components/default-generator/react/react/react-default-code.ts))
 * [react-native](./components/template/react-native/index.ts)
 * [angular](./components/template/angular/ng-template-generator.ts)
 * [vue](./components/template/vue/vue-template.ts) (most of code is [here](./components/default-generator/vue/vue-default-code.ts))
 
-All components are available [here](https://bit.dev/bit/javascript?namespaces=template).
-
 ### Template APIs
 A template component should export the following interface  
-(Currently, components use different names for exports, but they will be unified in the future)
+(Currently components use different names for exports, but they will be unified in the future)
 
 ```tsx
 mainFile: string;
