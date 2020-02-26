@@ -1,3 +1,6 @@
+<a href="https://opensource.org/licenses/Apache-2.0"><img alt="apache" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+ <a href="https://github.com/teambit/example-templates/blob/master/README.md#contributing"><img alt="prs" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
+ <a href="https://circleci.com/gh/teambit/example-templates/tree/master"><img alt="Circle Status" src="https://circleci.com/gh/teambit/example-templates/tree/master.svg?style=shield&circle-token=4cdd0cd2aeade2d932231f4d067350fd05ad17d9">
 # Example Templates
 
 This repository contains the boilerplates used by [bit.dev's playground](https://docs.bit.dev/docs/bit-dev#component-playground) for creating new examples.  
