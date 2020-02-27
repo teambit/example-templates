@@ -25,6 +25,8 @@ jobs:
 
     steps:
       - checkout
+      
+      - run: echo //node.bit.dev/:_authToken=${BIT_TOKEN} >> ./.npmrc
 
       # Download and cache dependencies
       - restore_cache:
