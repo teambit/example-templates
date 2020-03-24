@@ -88,6 +88,11 @@
     "bit.javascript/template/vue@2.0.5": {
         "files": [
             {
+                "relativePath": "snapshots/vueDefaultCode.ts",
+                "test": false,
+                "name": "vueDefaultCode.ts"
+            },
+            {
                 "name": "vue-template.spec.ts",
                 "relativePath": "vue-template.spec.ts",
                 "test": true
@@ -103,5 +108,5 @@
         "origin": "IMPORTED",
         "originallySharedDir": "components/template/vue"
     },
-    "version": "14.7.4"
+    "version": "14.7.6"
 }

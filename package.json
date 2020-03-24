@@ -30,6 +30,9 @@
     "@bit/bit.javascript.template.vue": "file:./components/template/vue"
   },
   "devDependencies": {
-    "bit-bin": "^14.7.6"
+    "@types/chai": "^4.2.9",
+    "@types/mocha": "^7.0.1",
+    "bit-bin": "^14.7.6",
+    "chai": "^4.2.0"
   }
 }

@@ -1,41 +1,8 @@
-import { makeTemplate } from './vue-template';
 import { expect } from 'chai';
+import generateVueDefaultCode from './vue-template';
+import vueDefaultCodeSnapshot from './snapshots/vue-default-code';
 
-it('should create default code', () => {
-	const result = makeTemplate({ npmId: '@bit/bit.javascript.raw.code-generator' });
-
-	const indexvue = [
-		'<template>',
-		'	<CodeGenerator/>',
-		'</template>',
-		'',
-		'<script>',
-		"	import Vue from 'vue';",
-		"	import CodeGenerator from '@bit/bit.javascript.raw.code-generator';",
-		'	',
-		'	export default (',
-		'		{',
-		'			data: () => ({',
-		'				var1: "world"',
-		'			}),',
-		'			components: {',
-		'				CodeGenerator,',
-		'			}',
-		'		}',
-		'	)',
-		'</script>',
-		'',
-		'<style scoped>',
-		'',
-		'</style>',
-	].join('\n');
-
-	expect(JSON.stringify(result)).to.deep.equal(
-		JSON.stringify({
-			files: {
-				'index.vue': indexvue,
-			},
-			mainFile: 'index.vue',
-		})
-	);
+it('should generate vue default code', () => {
+	const vueDefaultCode = generateVueDefaultCode({ npmId: '@bit/bit.javascript.raw.code-generator' });
+	expect(vueDefaultCode).to.equal(vueDefaultCodeSnapshot);
 });
