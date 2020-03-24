@@ -1,6 +1,6 @@
 {
   "name": "@bit/bit.javascript.template.vue",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "homepage": "https://bit.dev/bit/javascript/template/vue",
   "main": "dist/vue-template.js",
   "dependencies": {
